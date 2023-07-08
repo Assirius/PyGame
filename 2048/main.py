@@ -72,15 +72,15 @@ def draw_intro():
 
 #функция отрисовки списка топ игроков
 def draw_top_players():
-    font_head = pygame.font.SysFont("comicsansms", 30)
-    font_player = pygame.font.SysFont("comicsansms", 24)
+    font_head = pygame.font.SysFont("comicsansms", 25)
+    font_player = pygame.font.SysFont("comicsansms", 20)
     text_head = font_head.render("Best tries: ", True, COLOR_TEXT)
-    screen.blit(text_head, (300, 15))
+    screen.blit(text_head, (320, 5))
 
     for index, (name, score) in enumerate(PLAYERS_DB):
         data = f"{index+1}. {name} - {score}"
         text_player = font_player.render(f"{data}", True, COLOR_TEXT)
-        screen.blit(text_player, (300, 40 + 25 * index))
+        screen.blit(text_player, (320, 35 + 24 * index))
 
 
 #функция отрисовки интерфейса игры
