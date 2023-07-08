@@ -88,12 +88,12 @@ def draw_interface(score, delta=0):
     # рисуем блоки
     pygame.draw.rect(screen, WHITE, TITLE_REC)
     font_cell = pygame.font.SysFont("comicsansms", 70)
-    font_score = pygame.font.SysFont("comicsansms", 48)
-    font_delta = pygame.font.SysFont("comicsansms", 32)
+    font_score = pygame.font.SysFont("comicsansms", 42)
+    font_delta = pygame.font.SysFont("comicsansms", 26)
     text_score = font_score.render("Score: ", True, COLOR_TEXT)
     text_score_value = font_score.render(f"{score}", True, COLOR_TEXT)
-    screen.blit(text_score, (20, 35))
-    screen.blit(text_score_value, (150, 35))
+    screen.blit(text_score, (20, 25))
+    screen.blit(text_score_value, (160, 25))
     if delta > 0:
         text_delta = font_delta.render(f"+{delta}", True, COLOR_TEXT)
         screen.blit(text_delta, (145, 65))
@@ -122,7 +122,7 @@ def draw_game_over():
     global username, PLAYERS_DB
 
     img2048 = pygame.image.load("logo2048.png")
-    font = pygame.font.SysFont("comicsansms", 65)
+    font = pygame.font.SysFont("comicsansms", 50)
     text_game_over = font.render("Game over!", True, WHITE)
     text_score = font.render(f"Вы набрали {score}", True, WHITE)
 
