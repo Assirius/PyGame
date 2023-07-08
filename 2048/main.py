@@ -31,7 +31,7 @@ def init_game():
 #стартовый экран приветстивия
 def draw_intro():
     img2048 = pygame.image.load("logo2048.png")
-    font = pygame.font.SysFont("comicsansms", 70)
+    font = pygame.font.SysFont("comicsansms", 55)
     text_welcome = font.render("Welcome!", True, WHITE)
     name = "Введите имя"
     is_find_name = False
