@@ -20,29 +20,29 @@
 
 ### Установка venv
 1. Если у вас еще не установлен модуль venv, выполните следующую команду в командной строке, чтобы установить его:
-pip install venv
+**pip install venv**
 
 
 ### Установка зависимостей
 1. Перейдите в корневую папку проекта.
 
 2. Активируйте виртуальное окружение venv следующей командой:
-source venv/bin/activate
+**source venv/bin/activate**
 
 или для Windows:
-venv\Scripts\activate
+**venv\Scripts\activate**
 
 3. Установите зависимости, указанные в файле requirements.txt, выполнив следующую команду:
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 
 
 ### Запуск скрипта
 
 1. В корневой папке проекта выполните команду для перехода в дирректорию с игрой:
-*cd 2048*
+**cd 2048**
 
 2. Запускаем саму игру
-*python main.py*
+**python main.py**
 
 ---
 Приятной игры в 2048!
